@@ -50,7 +50,7 @@
   display: grid;
 }
 
-.socials-link {
+.social-link {
   height: 100%;
   width: 100%;
   display: flex;
@@ -58,6 +58,12 @@
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
   background-color: rgba(252, 249, 249, 0.1);
+}
+
+.social-link:hover,
+.social-link:focus {
+  border: 1px solid var(--yellow, #ecd979);
+  background-color: transparent;
 }
 
 .burger-menu {
@@ -84,7 +90,27 @@
   color: #1c2225;
   padding: 20px;
   overflow: auto;
-  /*opacity: 0;
+  /* opacity: 0;
   visibility: hidden;
   pointer-events: auto;*/
+}
+
+.address {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.mob-menu-contacts-item {
+  color: #1c2225;
+  text-decoration: none;
+  font-style: normal;
+  padding: 14px 28px;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+}
+
+.menu-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 32px;
 }
