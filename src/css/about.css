@@ -1,0 +1,49 @@
+.container {
+    min-width: 320px;
+    max-width: 375px;
+}
+
+.about-section {
+    padding-top: 80px;
+    padding-bottom: 62px;
+    background-image: url(./img/about-vyshyvanka-mob.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .about-section{
+        background-image: url(./img/about-vyshyvanka-mob2x.png);
+    }
+}
+
+.about-title {
+    color: #FCF9F9;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.96px;
+    margin-bottom: 40px;
+}
+
+.about-text {
+    color: rgba(252, 249, 249, 0.40);
+    font-size: 14px;
+    letter-spacing: -0.56px;
+}
+
+.about-text:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+.about-context-container {
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
