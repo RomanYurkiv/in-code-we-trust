@@ -98,19 +98,21 @@
   padding: 20px;
   overflow-y: auto;
   background-image: url(../img/header-vyshyvanka-mob.png);
-  background-size: auto;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: 0 561px;
-  /* opacity: 0;
+  background-position: bottom;
+  opacity: 0;
   visibility: hidden;
-  pointer-events: auto; */
+  pointer-events: auto;
 }
 
-/* @media (min-resolution: 192dpi) {
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .mob-menu {
     background-image: url(../img/header-vyshyvanka-mob2x.png);
   }
-} */
+}
 
 .address {
   display: inline-flex;
@@ -197,11 +199,13 @@
     background-position: 0 660px;
   }
 
-  /*   @media (min-resolution: 192dpi) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .mob-menu {
       background-image: url(../img/header-vyshyvanka-tab2x.png);
     }
-  } */
+  }
 
   .menu-close-btn {
     right: 32px;
