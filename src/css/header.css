@@ -73,6 +73,8 @@
 }
 
 .burger-menu {
+  width: 36px;
+  height: 24px;
   border: none;
   background: none;
   align-self: center;
