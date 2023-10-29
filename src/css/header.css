@@ -2,13 +2,36 @@
   padding: 20px 0;
 }
 
-.page-header .container {
+.navbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-content: center;
 }
 
-.navbar {
+.menu-desktop {
+  display: none;
+  justify-content: center;
   align-content: center;
+  gap: 25px;
+  color: #fcf9f9;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  text-transform: uppercase;
+}
+
+.menu-contacts-item {
+  display: none;
+  color: #fcf9f9;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.43;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-style: normal;
+  padding: 14px 28px;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
 }
 
 .logo-header {
@@ -29,7 +52,7 @@
 .nav-list-item {
   height: 44px;
   width: 44px;
-  display: grid;
+  display: flex;
 }
 
 .social-link {
@@ -38,6 +61,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: #fcf9f9;
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
   background-color: rgba(252, 249, 249, 0.1);
@@ -53,6 +77,7 @@
   background: none;
   align-self: center;
   padding: 0;
+  margin-left: 20px;
 }
 
 .is-open {
@@ -76,9 +101,17 @@
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 0 561px;
-  /*opacity: 0;
+  opacity: 0;
   visibility: hidden;
-  pointer-events: auto;*/
+  pointer-events: auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .mob-menu {
+    background-image: url(../img/header-vyshyvanka-mob2x.png);
+  }
 }
 
 .address {
@@ -136,5 +169,94 @@
 @media screen and (min-width: 320px) {
   .container {
     max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .nav-list {
+    gap: 20px;
+  }
+
+  .burger-menu {
+    margin-left: 28px;
+  }
+
+  .burger-menu .icon {
+    width: 44px;
+    height: 30px;
+  }
+
+  .mob-menu {
+    width: 380px;
+    background-image: url(../img/header-vyshyvanka-tab.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0 660px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .mob-menu {
+      background-image: url(../img/header-vyshyvanka-tab2x.png);
+    }
+  }
+
+  .menu-close-btn {
+    right: 32px;
+  }
+
+  .mob-menu-contacts-item {
+    font-size: 14px;
+    line-height: 1.43;
+    padding: 14px 28px;
+  }
+
+  .close-icon {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 100px;
+  }
+
+  .menu-desktop {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    align-items: center;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .logo-header {
+    margin-right: 60px;
+  }
+
+  .menu-contacts-item {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .menu-desktop-item:hover,
+  .menu-desktop-item:focus {
+    color: #ecd979;
+  }
+
+  .menu-contacts-item:hover,
+  .menu-contacts-item:focus {
+    border-radius: 15px;
+    border: 1px solid var(--yellow, #ecd979);
   }
 }
