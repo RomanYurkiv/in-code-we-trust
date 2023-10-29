@@ -90,29 +90,29 @@
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  right: 0;
   width: 274px;
   height: 100vh;
   background-color: #ecd979;
   color: #1c2225;
   padding: 20px;
-  overflow: auto;
+  overflow-y: auto;
   background-image: url(../img/header-vyshyvanka-mob.png);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 0 561px;
-  opacity: 0;
+  /* opacity: 0;
   visibility: hidden;
-  pointer-events: auto;
+  pointer-events: auto; */
 }
 
-@media (min-device-pixel-ratio: 2),
+/* @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .mob-menu {
     background-image: url(../img/header-vyshyvanka-mob2x.png);
   }
-}
+} */
 
 .address {
   display: inline-flex;
@@ -199,13 +199,13 @@
     background-position: 0 660px;
   }
 
-  @media (min-device-pixel-ratio: 2),
+  /*  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .mob-menu {
       background-image: url(../img/header-vyshyvanka-tab2x.png);
     }
-  }
+  } */
 
   .menu-close-btn {
     right: 32px;
