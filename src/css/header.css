@@ -106,9 +106,7 @@
   pointer-events: auto; */
 }
 
-/* @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+/* @media (min-resolution: 192dpi) {
   .mob-menu {
     background-image: url(../img/header-vyshyvanka-mob2x.png);
   }
@@ -199,9 +197,7 @@
     background-position: 0 660px;
   }
 
-  /*  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  /*   @media (min-resolution: 192dpi) {
     .mob-menu {
       background-image: url(../img/header-vyshyvanka-tab2x.png);
     }
