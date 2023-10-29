@@ -90,10 +90,13 @@
   color: #1c2225;
   padding: 20px;
   overflow: auto;
-  opacity: 0;
+  /*opacity: 0;
   visibility: hidden;
-  pointer-events: auto;
-  /*background-image: url();*/
+  pointer-events: auto;*/
+  background-image: url(../img/header-vyshyvanka-mob.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 0 561px;
 }
 
 .address {
@@ -109,7 +112,7 @@
   text-transform: uppercase;
   text-decoration: none;
   font-style: normal;
-  padding: 14px 28px;
+  padding: 12px 20px;
   border-radius: 15px;
   border: 1px solid rgba(28, 34, 37, 0.1);
 }
@@ -123,12 +126,13 @@
   top: 20px;
   right: 20px;
   border: none;
-  padding: 11px;
-  background-color: aqua;
+  background-color: transparent;
+  padding: 0;
 }
 
 .close-icon {
-  background-color: blue;
+  stroke-width: 2px;
+  stroke: #1c2225;
 }
 
 .mob-menu-list {
