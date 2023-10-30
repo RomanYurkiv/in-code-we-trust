@@ -6,7 +6,7 @@
 .about-section {
     padding-top: 80px;
     padding-bottom: 62px;
-    background-image: url(../img/about-vyshyvanka-mob.png);
+    background-image: url(./img/about-vyshyvanka-mob.png);
     background-size: 250px;
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -16,7 +16,7 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .about-section {
-        background-image: url(../img/about-vyshyvanka-mob2x.png);
+        background-image: url(./img/about-vyshyvanka-mob2x.png);
     }
 }
 
@@ -56,7 +56,7 @@
     .about-section {
         padding-top: 100px;
         padding-bottom: 50px;
-        background-image: url(../img/about-vyshyvanka-tab.png);
+        background-image: url(./img/about-vyshyvanka-tab.png);
         background-size: 369px;
     }
 
@@ -64,7 +64,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .about-section {
-            background-image: url(../img/about-vyshyvanka-tab2x.png);
+            background-image: url(./img/about-vyshyvanka-tab2x.png);
         }
     }
 
@@ -109,7 +109,7 @@
     .about-section {
         padding-top: 150px;
         padding-bottom: 80px;
-        background-image: url(../img/about-vyshyvanka.png);
+        background-image: url(./img/about-vyshyvanka.png);
         background-size: 385px;
     }
 
@@ -117,7 +117,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .about-section {
-            background-image: url(../img/about-vyshyvanka2x.png);
+            background-image: url(./img/about-vyshyvanka2x.png);
         }
     }
 
@@ -138,7 +138,7 @@
     }
 
     .about-section {
-        background-image: url(../img/about-vyshyvanka-desk.png);
+        background-image: url(./img/about-vyshyvanka-desk.png);
         background-size: 545px;
     }
 
@@ -146,7 +146,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .about-section {
-            background-image: url(../img/about-vyshyvanka-desk2x.png);
+            background-image: url(./img/about-vyshyvanka-desk2x.png);
         }
     }
 
