@@ -1,5 +1,5 @@
-.page-header {
-  padding: 20px 0;
+.header-container {
+  margin-bottom: 60px;
 }
 
 .navbar {
@@ -35,8 +35,6 @@
 }
 
 .logo-header {
-  width: 44px;
-  height: 39px;
   flex-shrink: 0;
   margin-right: auto;
   align-self: center;
@@ -74,7 +72,7 @@
 
 .burger-menu {
   width: 36px;
-  height: 24px;
+  height: 44px;
   border: none;
   background: none;
   align-self: center;
@@ -86,6 +84,11 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+.open-btn-icon {
+  width: 100%;
+  height: 100%;
 }
 
 .mob-menu {
@@ -119,28 +122,28 @@
 .address {
   display: inline-flex;
   justify-content: center;
+  border-radius: 15px;
+  border: 1px solid rgba(28, 34, 37, 0.1);
 }
 
 .mob-menu-contacts-item {
   color: #1c2225;
   font-size: 12px;
-  font-weight: 400;
   line-height: 1.17;
   text-transform: uppercase;
   text-decoration: none;
   font-style: normal;
   padding: 12px 20px;
-  border-radius: 15px;
-  border: 1px solid rgba(28, 34, 37, 0.1);
+
 }
 
-.mob-menu-contacts-item:focus {
+/* .mob-menu-contacts-item:focus {
   border: 1px solid var(--yellow, #ecd979);
-}
+} */
 
 .menu-close-btn {
   position: absolute;
-  top: 20px;
+  top: 21px;  
   right: 20px;
   border: none;
   background-color: transparent;
@@ -177,7 +180,12 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .header-container {
+    margin-bottom: 80px;
   }
 
   .nav-list {
@@ -196,9 +204,6 @@
   .mob-menu {
     width: 380px;
     background-image: url(../img/header-vyshyvanka-tab.png);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: 0 660px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -228,8 +233,13 @@
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
-    padding: 0 100px;
+    padding-right: 100px;
+    padding-left: 100px;
   }
+
+    .header-container {
+      margin-bottom: 100px;
+    }
 
   .menu-desktop {
     display: flex;
