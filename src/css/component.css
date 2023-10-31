@@ -8,6 +8,6 @@ body {
 .container {
     width: 100%;
     max-width: 1270px;
-    padding: 0 20px 0 20px;
+    padding: 20px 20px 0 20px;
     margin: 0 auto;
 }
