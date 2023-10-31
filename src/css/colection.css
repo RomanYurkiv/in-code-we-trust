@@ -6,6 +6,7 @@
          background-image: url(../img/ourcollection/elem-mob.png);
          background-position: top 300px left 0;
          background-repeat: no-repeat;
+         margin-bottom: 100px;
  }
 
  .collection-container {
@@ -29,7 +30,7 @@
 
  }
  .collection-item {
-        max-width: 100%;
+        
  }
 
  .collection-cover-container {
@@ -60,18 +61,17 @@
 
 
  @media screen and (min-width:768px) {
+
+        .container {
+        max-width: 768px;        
+        padding-left: 32px;
+        padding-right: 32px;
+        }
         
          .collection {
                  background-image: url(../img/ourcollection/elem-tablet.png);
-                 background-position: top 210px left 0;
-                 background-repeat: no-repeat;
-                 max-width: 768px;
-                 padding-left: 32px;
-                 padding-right: 32px;
-         }
-
-          .collection-container {
-          max-width: 768px;
+                 background-position: top 260px left 0;
+                
          }
 
          .collection-tittle {
@@ -80,7 +80,6 @@
          }
 
          .collection-list {
-                /* justify-content: center; */
                  gap: 20px;                 
          }
          .collection-item {
@@ -106,25 +105,29 @@
 
  @media screen and (min-width:1280px) {
 
+        .container {
+                max-width: 1280px;
+                padding-left: 100px;
+                padding-right: 100px;
+
+        }
+
         .collection {
                 background-image: url(../img/ourcollection/elem.png);
                 background-position: top 210px left 0;
-                background-repeat: no-repeat;
-                max-width: 1280px;
-                padding-left: 100.5px;
-                padding-right: 98.5px;
         }
 
-        .collection-container {
-                max-width: 1280px;
-        }
         
         .collection-tittle {
                 line-height: 1.45;
         }
 
+        .collection-list {
+                gap: 40px 20px;
+        }
+
          .collection-item {
-                width: calc((100% - 20px) / 3);
+                width: calc((100% - 40px) / 3);
         }
         
 
