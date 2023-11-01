@@ -2,15 +2,10 @@
 
 
  .collection {
-
          background-image: url(../img/ourcollection/elem-mob.png);
          background-position: top 300px left 0;
          background-repeat: no-repeat;
-         margin-bottom: 100px;
- }
-
- .collection-container {
-         max-width: 375px;
+         margin-bottom: 80px;
  }
 
  .collection-tittle {
@@ -25,16 +20,15 @@
  }
 
  .collection-list {
-        flex-wrap: wrap;
-        display: flex;
+         flex-wrap: wrap;
+         display: flex;
 
  }
- .collection-item {
-        
- }
+
+ .collection-item {}
 
  .collection-cover-container {
-         margin-top: 20px;
+         /* margin-top: 20px; */
          margin-bottom: 18px;
  }
 
@@ -59,19 +53,24 @@
          letter-spacing: 0.02em;
  }
 
+ .collection-description {
+         margin-bottom: 20px;
+ }
+
 
  @media screen and (min-width:768px) {
 
-        .container {
-        max-width: 768px;        
-        padding-left: 32px;
-        padding-right: 32px;
-        }
-        
+         .container {
+                 max-width: 768px;
+                 padding-left: 32px;
+                 padding-right: 32px;
+                 margin-bottom: 100px;
+         }
+
          .collection {
                  background-image: url(../img/ourcollection/elem-tablet.png);
-                 background-position: top 260px left 0;
-                
+                 background-position: top 220px left 0;
+
          }
 
          .collection-tittle {
@@ -80,10 +79,11 @@
          }
 
          .collection-list {
-                 gap: 20px;                 
+                 gap: 20px;
          }
+
          .collection-item {
-                width: calc((100% - 20px) / 2);
+                 width: calc((100% - 20px) / 2);
          }
 
          .collection-name {
@@ -101,34 +101,42 @@
                  display: flex;
          }
 
+         .collection-description {
+                 margin-bottom: 20px;
+         }
+
+         .collection-description {
+                margin-bottom: 0;    
+         }
+
  }
 
  @media screen and (min-width:1280px) {
 
-        .container {
-                max-width: 1280px;
-                padding-left: 100px;
-                padding-right: 100px;
+         .container {
+                 max-width: 1280px;
+                 padding-left: 100px;
+                 padding-right: 100px;
+                 margin-bottom: 150px;
+         }
 
-        }
+         .collection {
+                 background-image: url(../img/ourcollection/elem.png);
+                 background-position: top 220px left 0;
+         }
 
-        .collection {
-                background-image: url(../img/ourcollection/elem.png);
-                background-position: top 210px left 0;
-        }
 
-        
-        .collection-tittle {
-                line-height: 1.45;
-        }
+         .collection-tittle {
+                 line-height: 1.45;
+         }
 
-        .collection-list {
-                gap: 40px 20px;
-        }
+         .collection-list {
+                 gap: 40px 20px;
+         }
 
          .collection-item {
-                width: calc((100% - 40px) / 3);
-        }
-        
+                 width: calc((100% - 40px) / 3);
+         }
+
 
  }
