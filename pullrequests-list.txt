@@ -1,1 +1,2 @@
-1. https://github.com/RomanYurkiv/in-code-we-trust/pull/6
+
+2. https://github.com/RomanYurkiv/in-code-we-trust/pull/3
