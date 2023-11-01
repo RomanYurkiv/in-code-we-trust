@@ -1,0 +1,154 @@
+ /* Collection Section */
+
+
+ .collection {
+         background-image: url(../img/ourcollection/elem-mob.png);
+         background-position: top 300px left 0;
+         background-repeat: no-repeat;
+         margin-bottom: 80px;
+ }
+
+ .collection-tittle {
+         color: #FCF9F9;
+         font-size: 32px;
+         font-style: normal;
+         font-weight: 500;
+         line-height: 1.37;
+         letter-spacing: 0.03em;
+         margin-bottom: 40px;
+         text-align: center;
+ }
+
+ .text-point {
+        display: none;
+ }
+
+ .collection-list {
+         flex-wrap: wrap;
+         display: flex;
+
+ }
+
+ .collection-item {}
+
+ .collection-cover-container {
+         /* margin-top: 20px; */
+         margin-bottom: 18px;
+ }
+
+ .collection-name {
+         overflow: hidden;
+         color: #FCF9F9;
+         text-overflow: ellipsis;
+         font-size: 14px;
+         font-style: normal;
+         font-weight: 500;
+         line-height: 1;
+         letter-spacing: 0.02em;
+         text-transform: uppercase;
+         margin-bottom: 8px;
+ }
+
+ .collection-price {
+         color: rgba(252, 249, 249, 0.40);
+         font-size: 14px;
+         font-style: normal;
+         line-height: 1;
+         letter-spacing: 0.02em;
+ }
+
+ .collection-description {
+         margin-bottom: 20px;
+ }
+
+
+ @media screen and (min-width:768px) {
+
+         .container {
+                 max-width: 768px;
+                 padding-left: 32px;
+                 padding-right: 32px;
+                 margin-bottom: 100px;
+         }
+
+         .collection {
+                 background-image: url(../img/ourcollection/elem-tablet.png);
+                 background-position: top 220px left 0;
+
+         }
+
+         .collection-tittle {
+                 font-size: 44px;
+                 line-height: 1.45;
+         }
+
+         .collection-list {
+                 gap: 20px;
+         }
+
+         .collection-item {
+                 width: calc((100% - 20px) / 2);
+         }
+
+         .text-point {
+                display: contents;
+         }
+
+         .word-end {
+                display: none;
+         }
+
+         .collection-name {
+                 overflow: hidden;
+                 font-size: 18px;
+                 line-height: 1;
+         }
+
+         .collection-price {
+                 font-size: 18px;
+                 line-height: 1;
+         }
+
+         .collection-cover-container {
+                 display: flex;
+         }
+
+         .collection-description {
+                 margin-bottom: 20px;
+         }
+
+         .collection-description {
+                margin-bottom: 0;    
+         }
+
+ }
+
+ @media screen and (min-width:1280px) {
+
+         .container {
+                 max-width: 1280px;
+                 padding-left: 100px;
+                 padding-right: 100px;
+                 margin-bottom: 150px;
+         }
+
+         .collection {
+                 background-image: url(../img/ourcollection/elem.png);
+                 background-position: top 220px left 0;
+         }
+
+
+         .collection-tittle {
+                 line-height: 1.45;
+         }
+
+         .collection-list {
+                 gap: 40px 20px;
+         }
+
+         .collection-item {
+                 width: calc((100% - 40px) / 3);
+         }
+
+
+ }
