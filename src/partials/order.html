@@ -1,0 +1,77 @@
+<section class="order">
+  <div class="order-img"></div>
+  <div class="container order-content">
+    <div class="order-content-wrap">
+      <h2 id="your-order" class="order-title">
+        <span class="order-title-color">Your order</span> is our priority:
+        Personalized approach and quality of service
+      </h2>
+
+      <form class="order-form">
+        <input
+          class="order-input"
+          id="user-name"
+          type="text"
+          name="user-name"
+          placeholder="Enter your full name"
+          pattern="[A-Za-z-' ]+"
+          required
+        />
+        <input
+          class="order-input"
+          id="user-email"
+          type="email"
+          name="user-email"
+          placeholder="Enter your email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          required
+        />
+        <textarea
+          class="order-textarea"
+          name="user-comment"
+          id="user-comment"
+          placeholder="Comments"
+        ></textarea>
+        <button class="order-btn" type="submit">
+          send
+          <svg
+            class="order-btn-arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="16"
+            fill="none"
+          >
+            <path
+              d="M20.824 9.967c-.13-.977-.214-1.85-.253-2.617-.016-.78.014-1.455.09-2.025L1.69 16.277l-.898-1.554L19.763 3.77a16.824 16.824 0 0 1-1.82-.972 36.481 36.481 0 0 1-2.119-1.49l1.14-.658c2.406 1.012 4.607 1.518 6.602 1.517l.385.666c-1.013 1.703-1.675 3.862-1.988 6.477l-1.139.657Z"
+            />
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="order-picture-wrap">
+      <picture class="order-picture">
+        <source
+          srcset="
+            ./img/order-vyshyvanka.jpg   1x,
+            ./img/order-vyshyvanka2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/order-vyshyvanka-tab.jpg   1x,
+            ./img/order-vyshyvanka-tab2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img
+          class="order-picture-img"
+          src="./img/order-vyshyvanka.jpg"
+          alt="vyshyvanka"
+          width="638"
+          height="521"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
