@@ -52,6 +52,8 @@
     letter-spacing: -0.04em;
     text-transform: uppercase;
 }
+
+.hero-btn-order:hover,
 .hero-btn-order:focus{
     border: 1px solid var(--yellow, #ECD979);
 }
@@ -97,7 +99,9 @@
       line-height: 1.2;
       letter-spacing: -0.03em;
       padding-top: 26px;
+      margin-bottom: 40px;
    }
+
    .hero-div-btn {
        margin-left: 141px;
    }
@@ -130,7 +134,7 @@
       display: flex;
       box-sizing: border-box;
       position: absolute;
-      right: 23px;
+      right: 32px;
       bottom: 0;
    }
 }
@@ -152,6 +156,9 @@
         order: -1;
         width: 392px;
     }
+    .hero-div-btn {
+       margin-left: 181px;
+    }
     .hero-title{
         width: 518px;
         margin-top: 94px;
@@ -161,5 +168,9 @@
     }
     .hero-div-star{
         top: 114px;
+        right: 100px;
     } 
+    .hero-div-ukraine{
+      right: 100px;
+   }
 }
