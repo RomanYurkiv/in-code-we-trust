@@ -6,11 +6,16 @@ body{
 .footer{
     border-top: 1px solid rgba(252, 249, 249, 0.10);
     position: relative;
+    max-width: 375px;
+    margin: 0 auto;
 }
 
 .footer-container{
     padding-bottom: 80px;
-    padding-top: 70px;
+    padding-top: 40px;
+}
+.footer-menu-list-item{
+    min-width: 116px;
 }
 
 .footer-menu-link{
@@ -79,10 +84,21 @@ body{
     .footer{
         flex-direction: row;
         display: flex;
+        max-width: 768px;
     }
+
 
     .footer-container{
         padding: 40px 41px 40px 32px;
+
+    }
+
+    .footer-menu-list-item{
+        min-width: auto;
+    }
+
+    .    .footer-menu-list-item:nth-child(2){
+        order: 3;
     }
 
     .footer-embroidery{
@@ -107,6 +123,7 @@ body{
     .footer-menu{
         max-width: 478px;
         justify-content: flex-start;
+        margin-bottom: 80px;
     }
 
     .footer-text{
@@ -122,6 +139,10 @@ body{
 
 
 @media screen and (min-width:1280px){
+
+    .footer{
+        max-width: 1280px;
+    }
 
     .footer-container{
         padding-left: 100px;
@@ -148,7 +169,7 @@ body{
     }
 
     .footer-menu{
-
+        margin-bottom: 117px;
     }
 
     .footer-text{
