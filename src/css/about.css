@@ -4,8 +4,9 @@
 }
 
 .about-section {
-    margin-bottom: 80px;
-    background-image: url(./img/about-vyshyvanka-mob.png);
+    margin-bottom: 18px;
+    padding-bottom: 62px;
+    background-image: url(../img/about-vyshyvanka-mob.png);
     background-size: 250px;
     background-repeat: no-repeat;
     background-position: right 0 bottom 0;
@@ -15,7 +16,7 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .about-section {
-        background-image: url(./img/about-vyshyvanka-mob2x.png);
+        background-image: url(../img/about-vyshyvanka-mob2x.png);
     }
 }
 
@@ -42,10 +43,6 @@
     margin-bottom: 50px;
 }
 
-.about-img-tab, .about-img, .about-img-desk {
-    display: none;
-}
-
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
@@ -53,8 +50,9 @@
     }
 
     .about-section {
-        margin-bottom: 100px;
-        background-image: url(./img/about-vyshyvanka-tab.png);
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+        background-image: url(../img/about-vyshyvanka-tab.png);
         background-size: 369px;
     }
 
@@ -62,7 +60,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .about-section {
-            background-image: url(./img/about-vyshyvanka-tab2x.png);
+            background-image: url(../img/about-vyshyvanka-tab2x.png);
         }
     }
 
@@ -81,14 +79,6 @@
         font-size: 16px;
     }
 
-    .about-img-mob, .about-img, .about-img-desk {
-        display: none;
-    }
-
-    .about-img-tab {
-        display: block;
-    }
-
 }
 
 @media screen and (min-width: 1280px) {
@@ -104,9 +94,14 @@
         gap: 50px;
     }
 
+    .about-context-container {
+        max-width: 436px;
+    }
+
     .about-section {
-        margin-bottom: 150px;
-        background-image: url(./img/about-vyshyvanka.png);
+        margin-bottom: 70px;
+        padding-bottom: 80px;
+        background-image: url(../img/about-vyshyvanka.png);
         background-size: 385px;
     }
 
@@ -114,18 +109,8 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .about-section {
-            background-image: url(./img/about-vyshyvanka2x.png);
+            background-image: url(../img/about-vyshyvanka2x.png);
         }
-    }
-
-    .about-img-mob,
-    .about-img-tab,
-    .about-img-desk {
-        display: none;
-    }
-
-    .about-img {
-        display: block;
     }
 }
 
@@ -135,26 +120,19 @@
     }
 
     .about-section {
-        background-image: url(./img/about-vyshyvanka-desk.png);
+        background-image: url(../img/about-vyshyvanka-desk.png);
         background-size: 545px;
+    }
+
+    .about-context-container {
+        max-width: 481px;
     }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .about-section {
-            background-image: url(./img/about-vyshyvanka-desk2x.png);
+            background-image: url(../img/about-vyshyvanka-desk2x.png);
         }
     }
-
-    .about-img-desk {
-        display: block;
-    }
-
-    .about-img-mob,
-    .about-img,
-    .about-img-tab {
-        display: none;
-    }
-
 }
