@@ -19,6 +19,10 @@
          text-align: center;
  }
 
+ .text-point {
+        display: none;
+ }
+
  .collection-list {
          flex-wrap: wrap;
          display: flex;
@@ -84,6 +88,14 @@
 
          .collection-item {
                  width: calc((100% - 20px) / 2);
+         }
+
+         .text-point {
+                display: contents;
+         }
+
+         .word-end {
+                display: none;
          }
 
          .collection-name {
