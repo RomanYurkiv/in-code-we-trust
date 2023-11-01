@@ -140,7 +140,7 @@
     }
   }
 
-  .order .container {
+  .order.container {
     max-width: 768px;
     padding: 0 32px;
   }
@@ -197,6 +197,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+
+.container {}
+
   .order {
     max-width: 1280px;
     padding-bottom: 0;
