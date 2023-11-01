@@ -1,9 +1,11 @@
 .order {
-  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .order-img {
+  margin: 0 auto;
   margin-bottom: 80px;
+  max-width: 375px;
   width: 100%;
   height: 550px;
   background-repeat: no-repeat;
@@ -122,6 +124,8 @@
 }
 @media screen and (min-width: 768px) {
   .order {
+    margin: 0 auto;
+    max-width: 768px;
     background-image: url(../img/order-vyshyvanka-tab-png.png);
     background-repeat: no-repeat;
     background-position: bottom 1px left 0;
@@ -137,10 +141,16 @@
   }
 
   .order .container {
+    max-width: 768px;
     padding: 0 32px;
+  }
+  .order {
+    margin-bottom: 100px;
+    padding-bottom: 80px;
   }
 
   .order-img {
+    max-width: 768px;
     height: 776px;
     margin-bottom: 100px;
     background-image: url(../img/order-girl-tab.jpg);
@@ -188,10 +198,12 @@
 
 @media screen and (min-width: 1280px) {
   .order {
-    padding-bottom: 150px;
+    max-width: 1280px;
+    padding-bottom: 0;
     background-image: url(../img/order-vyshyvanka-png.png);
     background-repeat: no-repeat;
-    background-position: bottom 150px left 0;
+    background-position: bottom 0 left 0;
+    margin-bottom: 150px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -202,8 +214,14 @@
       background-size: 289px 484px;
     }
   }
+  
+    .order .container {
+      max-width: 1280px;
+
+    }
 
   .order-img {
+    max-width: 1280px;
     margin-bottom: 150px;
     background-image: url(../img/order-girl.jpg);
   }
@@ -224,7 +242,7 @@
   }
 
   .order-content.container {
-    padding-left: 60px;
+    padding-left: 64px;
     padding-right: 100px;
   }
 
