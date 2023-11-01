@@ -94,7 +94,7 @@
 }
 
 .mob-menu {
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   right: 0;
@@ -108,8 +108,15 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
-  opacity: 0;
-  visibility: hidden;
+  right: -274px;
+  pointer-events: auto;
+  transition: .4s ease-in-out;
+}
+
+
+
+.is-open {
+  right: 0;
   pointer-events: auto;
 }
 
