@@ -69,11 +69,12 @@
                  max-width: 768px;
                  padding-left: 32px;
                  padding-right: 32px;
-                 padding-top: 50px;
-                 padding-bottom: 50px;
+                
          }
 
          .collection {
+                 padding-top: 50px;
+                 padding-bottom: 50px;
                  background-image: url(../img/ourcollection/elem-tablet.png);
                  background-position: top 220px left 0;
 
@@ -131,11 +132,11 @@
                  max-width: 1280px;
                  padding-left: 100px;
                  padding-right: 100px;
-                 padding-top: 70px;
-                 padding-bottom: 150px;
          }
 
          .collection {
+                 padding-top: 70px;
+                 padding-bottom: 100px;
                  background-image: url(../img/ourcollection/elem.png);
                  background-position: top 220px left 0;
          }

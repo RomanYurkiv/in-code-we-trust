@@ -49,7 +49,8 @@
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
-        padding: 0 32px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     .about-section {
@@ -88,7 +89,8 @@
 @media screen and (min-width: 1280px) {
     .container {
         max-width: 1280px;
-        padding: 0 100px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
     .about-container {
