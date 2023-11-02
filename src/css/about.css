@@ -126,6 +126,7 @@
     }
 
     .about-section {
+        max-width: 1440px;
         background-image: url(../img/about-vyshyvanka-desk.png);
         background-size: 545px;
     }
