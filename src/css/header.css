@@ -13,11 +13,17 @@
   justify-content: center;
   align-content: center;
   gap: 25px;
+}
+
+.menu-desktop-item {
   color: #fcf9f9;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
   text-transform: uppercase;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-contacts-item {
@@ -32,6 +38,7 @@
   padding: 14px 28px;
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-header {
@@ -63,6 +70,8 @@
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
   background-color: rgba(252, 249, 249, 0.1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:focus {
@@ -134,7 +143,6 @@
   text-decoration: none;
   font-style: normal;
   padding: 12px 20px;
-
 }
 
 /* .mob-menu-contacts-item:focus {
@@ -143,7 +151,7 @@
 
 .menu-close-btn {
   position: absolute;
-  top: 21px;  
+  top: 21px;
   right: 20px;
   border: none;
   background-color: transparent;
@@ -237,9 +245,9 @@
     padding-left: 100px;
   }
 
-    .header-container {
-      margin-bottom: 100px;
-    }
+  .header-container {
+    margin-bottom: 100px;
+  }
 
   .menu-desktop {
     display: flex;
@@ -268,7 +276,6 @@
 
   .menu-contacts-item:hover,
   .menu-contacts-item:focus {
-    border-radius: 15px;
     border: 1px solid var(--yellow, #ecd979);
   }
 }
