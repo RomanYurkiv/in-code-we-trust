@@ -14,7 +14,8 @@ body {
   padding-top: 40px;
 }
 .footer-menu-list-item {
-  min-width: 116px;
+  /* max-width: 124px; */
+  width: calc((100% - 40px) /2);
 }
 
 .footer-menu-link {
@@ -29,9 +30,9 @@ body {
 .footer-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 25px;
+  gap: 25px 40px;
   justify-content: space-between;
-  max-width: 280px;
+  max-width: 287px;
   margin-bottom: 40px;
 }
 
@@ -54,6 +55,8 @@ body {
 }
 
 .footer-embroidery {
+  margin: 0 auto;
+  max-width: 375px;
   background-image: url(../img/footer-vyshyvanka-mob.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,8 +66,7 @@ body {
   width: 100%;
   position: fixed;
   bottom: 0;
-  left: 0;
-}
+  }
 @media (main-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -85,19 +87,24 @@ body {
   }
 
   .footer-menu-list-item {
-    min-width: auto;
+    width: unset;
   }
 
   .footer-menu-list-item:nth-child(2) {
+    order: 2;
+  }
+
+  .footer-menu-list-item:nth-child(4) {
     order: 3;
   }
 
   .footer-embroidery {
+    max-width: 768px;
     background-image: url(../img/footer-vyshyvanka-tab.png);
     height: 370px;
     width: 174px;
+    position: relative;
     bottom: auto;
-    left: auto;
     top: 0;
     right: 0;
   }
@@ -112,7 +119,9 @@ body {
 
   .footer-menu {
     max-width: 478px;
+    flex-wrap: nowrap;
     justify-content: flex-start;
+    gap: 0 25px;
     margin-bottom: 80px;
   }
 
