@@ -258,3 +258,41 @@
     height: 521px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  
+    .order {
+      max-width: 1440px;
+      padding-bottom: 0;
+      background-image: url(../img/order-vyshyvanka-png.png);
+      background-repeat: no-repeat;
+      background-position: bottom 0 left 0;
+      margin-bottom: 150px;
+    }
+
+    
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .order-img {
+    background-image: url(../img/order-girl2x.jpg);
+  }
+}
+    
+    .order .container {
+      max-width: 1440px;
+  
+    }
+  
+    .order-img {
+      max-width: 1440px;
+      margin-bottom: 150px;
+      background-image: url(../img/order-girl.jpg);
+    }
+
+    .order-title {
+      max-width: 666px;
+      font-size: 174px;
+    }
+  }
+  
