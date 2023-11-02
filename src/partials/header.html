@@ -68,7 +68,7 @@
           </a>
         </li>
       </ul>
-      <button type="button" class="burger-menu">
+      <button type="button" onclick="onOpen()" class="burger-menu">
         <svg class="open-btn-icon" height="24" width="36">
           <use href="./img/svgicon.svg#icon-menubtn"></use>
         </svg>
@@ -76,13 +76,13 @@
     </nav>
   </div>
 
-  <div class="mob-menu">
+  <div class="mob-menu" id="menu">
     <address class="address">
       <a class="mob-menu-contacts-item" href="tel:+380684439426"
         >+380 (68) 443-94-26</a
       >
     </address>
-    <button type="button" class="menu-close-btn">
+    <button type="button" onclick="onClose()" class="menu-close-btn">
       <svg class="close-icon" width="36" height="36">
         <use href="./img/svgicon.svg#icon-closebtn"></use>
       </svg>
@@ -102,4 +102,17 @@
       </li>
     </ul>
   </div>
+  <div class="mob-ornament"></div>
+  <script>
+    const menu = document.getElementById("menu");
+
+    const onOpen=()=> {
+      menu.classList.add("is-open");
+    }
+
+    const onClose = () => {
+      menu.classList.remove("is-open")
+    }
+
+  </script>
 </header>
