@@ -1,21 +1,283 @@
-.header {
-  padding: 20px 0;
+
+.header-container {
+  padding-top: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.menu-desktop {
+  display: none;
+  justify-content: center;
+  align-content: center;
+  gap: 25px;
+}
+
+.menu-desktop-item {
+  color: #fcf9f9;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  text-transform: uppercase;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-contacts-item {
+  display: none;
+  color: #fcf9f9;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.43;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-style: normal;
+  padding: 14px 28px;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-header {
+  flex-shrink: 0;
+  margin-right: auto;
+  align-self: center;
 }
 
 .nav-list {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
-  gap: 40px;
+  align-items: center;
+  gap: 12px;
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+.nav-list-item {
+  height: 44px;
+  width: 44px;
+  display: flex;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.social-link {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #fcf9f9;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  background-color: rgba(252, 249, 249, 0.1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover,
+.social-link:focus {
+  border: 1px solid var(--yellow, #ecd979);
+  background-color: transparent;
+}
+
+.burger-menu {
+  width: 36px;
+  height: 44px;
+  border: none;
+  background: none;
+  align-self: center;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.open-btn-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.mob-menu {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 274px;
+  height: 100vh;
+  background-color: #ecd979;
+  color: #1c2225;
+  padding: 20px;
+  overflow-y: auto;
+  background-image: url(../img/header-vyshyvanka-mob.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: auto;
+  transition: .4s ease-in-out;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .mob-menu {
+    background-image: url(../img/header-vyshyvanka-mob2x.png);
+  }
+}
+
+.address {
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 15px;
+  border: 1px solid rgba(28, 34, 37, 0.1);
+}
+
+.mob-menu-contacts-item {
+  color: #1c2225;
+  font-size: 12px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-style: normal;
+  padding: 12px 20px;
+}
+
+/* .mob-menu-contacts-item:focus {
+  border: 1px solid var(--yellow, #ecd979);
+} */
+
+.menu-close-btn {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.close-icon {
+  stroke-width: 2px;
+  stroke: #1c2225;
+}
+
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+  margin-top: 186px;
+}
+
+.mob-menu-list-item {
+  color: #1c2225;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .nav-list {
+    gap: 20px;
+  }
+
+  .burger-menu {
+    margin-left: 28px;
+  }
+
+  .burger-menu .icon {
+    width: 44px;
+    height: 30px;
+  }
+
+  .mob-menu {
+    width: 380px;
+    background-image: url(../img/header-vyshyvanka-tab.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .mob-menu {
+      background-image: url(../img/header-vyshyvanka-tab2x.png);
+    }
+  }
+
+  .menu-close-btn {
+    right: 32px;
+  }
+
+  .mob-menu-contacts-item {
+    font-size: 14px;
+    line-height: 1.43;
+    padding: 14px 28px;
+  }
+
+  .close-icon {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .header-container {
+    padding-top: 20px;
+  }
+  
+  .menu-desktop {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    align-items: center;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .mob-menu {
+    display: none;
+  }
+
+  .logo-header {
+    margin-right: 60px;
+  }
+
+  .menu-contacts-item {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .menu-desktop-item:hover,
+  .menu-desktop-item:focus {
+    color: #ecd979;
+  }
+
+  .menu-contacts-item:hover,
+  .menu-contacts-item:focus {
+    border: 1px solid var(--yellow, #ecd979);
+  }
 }
