@@ -1,6 +1,7 @@
 .testimonials-section {
   max-width: 375px;
-  margin-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .testimonials-title {
@@ -55,7 +56,8 @@
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
-    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .testimonials-title {
@@ -84,7 +86,8 @@
 
 @media screen and (min-width: 1280px) {
   .testimonials-section {
-    margin-bottom: 150px;
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 
   .container {
