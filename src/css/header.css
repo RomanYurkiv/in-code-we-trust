@@ -281,3 +281,9 @@
     border: 1px solid var(--yellow, #ecd979);
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}

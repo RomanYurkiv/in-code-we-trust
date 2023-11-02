@@ -161,3 +161,23 @@
       bottom: 80px;
    }
 }
+
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+    
+    .hero-title{
+        width: 630px;
+        margin-top: 66px;
+        margin-bottom: 40px;
+        margin-left: 40px;
+        padding: 0;
+        font-size: 64px;
+        line-height: 1.15;
+    }
+
+    .hero-div-star{
+        top: 166px;
+    }  
+}

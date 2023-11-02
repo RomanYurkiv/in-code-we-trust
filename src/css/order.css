@@ -198,8 +198,6 @@
 
 @media screen and (min-width: 1280px) {
 
-.container {}
-
   .order {
     max-width: 1280px;
     padding-bottom: 0;
@@ -219,7 +217,6 @@
   
     .order .container {
       max-width: 1280px;
-
     }
 
   .order-img {
@@ -256,4 +253,38 @@
     width: 524px;
     height: 521px;
   }
+}
+
+@media screen and (min-width: 1440px) {
+  
+  .container {
+    max-width: 1440px;
+  }
+
+  .order {
+      max-width: 1440px;
+  }
+
+  .order-img {
+    max-width: 1440px;
+    background-image: url(../img/order-girl-desk.jpg);
+  }
+
+   @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .order-img {
+      background-image: url(../img/order-girl-desk2x.jpg);
+    }
+  }
+
+  .order-content.container {
+    max-width: 1440px;
+    padding-left: 100px;
+  }
+
+  .order-title {
+    max-width: 666px;
+  }
+
 }

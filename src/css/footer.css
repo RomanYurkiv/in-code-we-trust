@@ -64,7 +64,6 @@ body {
   display: block;
   height: 215px;
   width: 100%;
-  position: fixed;
   bottom: 0;
   }
 @media (main-device-pixel-ratio: 2),
@@ -164,4 +163,25 @@ body {
     font-size: 64px;
     max-width: 754px;
   }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    max-width: 1440px;
+  }
+
+  .footer-embroidery {
+    background-image: url(../img/footer-vyshyvanka-desk.png);
+    height: 363px;
+    min-width: 496px;
+  }
+
+  @media (main-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .footer-embroidery {
+        background-image: url(../img/footer-vyshyvanka-desk2x.png);
+    }
+  }
+
 }

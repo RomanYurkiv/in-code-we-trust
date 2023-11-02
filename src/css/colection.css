@@ -3,7 +3,7 @@
 
  .collection {
          background-image: url(../img/ourcollection/elem-mob.png);
-         background-position: top 300px left 0;
+         background-position: top 320px left 0;
          background-repeat: no-repeat;
          padding-top: 18px;
          padding-bottom: 40px;
@@ -76,7 +76,7 @@
                  padding-top: 50px;
                  padding-bottom: 50px;
                  background-image: url(../img/ourcollection/elem-tablet.png);
-                 background-position: top 220px left 0;
+                 background-position: top 270px left 0;
 
          }
 
@@ -138,7 +138,7 @@
                  padding-top: 70px;
                  padding-bottom: 100px;
                  background-image: url(../img/ourcollection/elem.png);
-                 background-position: top 220px left 0;
+                 background-position: top 290px left 0;
          }
 
 
@@ -153,6 +153,14 @@
          .collection-item {
                  width: calc((100% - 40px) / 3);
          }
+ }
 
+ @media screen and (min-width:1440px) {
+        .container {
+                max-width: 1440px;
+        }
 
+        .collection {
+                background-position: top 300px left 0;
+        }
  }
