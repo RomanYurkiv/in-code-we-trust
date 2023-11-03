@@ -19,6 +19,7 @@
 (min-resolution: 2dppx) {
     .about-section {
         background-image: url(../img/about-vyshyvanka-mob2x.png);
+        background-size: 250px;
     }
 }
 
@@ -66,6 +67,7 @@
     (min-resolution: 2dppx) {
         .about-section {
             background-image: url(../img/about-vyshyvanka-tab2x.png);
+            background-size: 368px;
         }
     }
 
@@ -116,6 +118,7 @@
     (min-resolution: 2dppx) {
         .about-section {
             background-image: url(../img/about-vyshyvanka2x.png);
+            background-size: 385px;
         }
     }
 }
